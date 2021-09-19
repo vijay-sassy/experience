@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Experience</title>
+</head>
+<body>
+<center>
+	<h1>Work Experience</h1>
+	<h3 th:text="'CAMS - ' + ${experience.get('cams').getYears()} + ' Years '
+	           + ${experience.get('cams').getMonths()} + ' Months '
+	           + ${experience.get('cams').getDays()} + ' Days'"></h3>
+	<h3 th:text="'VAMSOFT - ' + ${experience.get('vamsoft').getYears()} + ' Years '
+	           + ${experience.get('vamsoft').getMonths()} + ' Months '
+	           + ${experience.get('vamsoft').getDays()} + ' Days'"></h3>
+	<h3 th:text="'VIRTUSA - ' + ${experience.get('virtusa').getYears()} + ' Years '
+	           + ${experience.get('virtusa').getMonths()} + ' Months '
+	           + ${experience.get('virtusa').getDays()} + ' Days'"></h3>
+	<h3 th:text="'ACCENTURE - ' + ${experience.get('accenture').getYears()} + ' Years '
+	           + ${experience.get('accenture').getMonths()} + ' Months '
+	           + ${experience.get('accenture').getDays()} + ' Days'"></h3>
+	<h3 th:text="'TOTAL IT EXPERIENCE - ' + ${experience.get('normalized').getYears()} + ' Years '
+	           + ${experience.get('normalized').getMonths()} + ' Months '
+	           + ${experience.get('normalized').getDays()} + ' Days'"></h3>
+</center>
+</body>
+</html>
